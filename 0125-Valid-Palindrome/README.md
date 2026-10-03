@@ -46,7 +46,7 @@ Since an empty string reads the same forward and backward, it is a palindrome.
 
 - **Language**: C++
 - **Runtime**: 0 ms
-- **Memory**: 7.8 MB
+- **Memory**: 7.9 MB
 
 ---
 

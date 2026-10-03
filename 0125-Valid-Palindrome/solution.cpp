@@ -19,7 +19,7 @@ public:
                 end--;
                 continue;
             }
-            if (tolower(st) != tolower(end)) {
+            if (tolower(s[st]) != tolower(s[end])) {
                 return false;
             }
             st++;

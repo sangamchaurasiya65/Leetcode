@@ -54,7 +54,7 @@ The greatest common divisor of 3 and 3 is 3.
 
 - **Language**: C++
 - **Runtime**: 0 ms
-- **Memory**: 8.5 MB
+- **Memory**: 8.4 MB
 
 ---
 

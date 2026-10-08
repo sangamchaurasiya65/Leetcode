@@ -1,25 +1,22 @@
 class Solution {
 public:
-    int maxArea(vector<int>& height) {
-        int maxWater=0 ;
-        int  lp=0 , rp = height.size()-1;
-        while(lp<rp){
-            int wt = rp - lp;
-            int ht = min(height[lp],height[rp]);
-            int currWater = wt*ht;
-
-           maxWater = max(maxWater, currWater);
-           if(height[lp] < height[rp]){
-            lp++;
-           }else{
-            rp--;
-           }
-
+    bool isAnagram(string s, string t) {
+        if(s.length() != t.length()){
+            return false;
         }
-        return maxWater;
-        
-               
-            
+        int count[26] = {0};
+        for(char ch : s){
+            count[ch - 'a']++;
+        }
+        for(char ch : t){
+            count[ch - 'a']--;
+        }
+        for(int i = 0; i<26;i++){
+            if(count[i] != 0){
+                return false;
+            }
+        }
+        return true;
         
     }
 };

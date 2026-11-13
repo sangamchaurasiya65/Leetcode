@@ -2,9 +2,8 @@ class Solution {
 public:
     bool isValid(string s) {
         stack<char>S;
-        char ch;
         for(int i = 0; i<s.length(); i++){
-            ch = s[i];
+           char ch = s[i];
             if(ch == '(' || ch == '{' || ch == '['){
                 S.push(ch);
             }else if(ch == ')' || ch == '}' || ch == ']'){
@@ -18,12 +17,7 @@ public:
                 }
             }
         }
-        if(S.empty()){
-           return true;
-        }else{
-
-             return false;
-        }
+        return S.empty();
 
         
     }
